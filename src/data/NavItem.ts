@@ -23,7 +23,11 @@ export interface NavItem {
         href: "#",
       },
       {
-        label: "F&Q",
+        label: "About Us",
+        href: "#"
+      },
+      {
+        label: "Contact Us",
         href: "#",
       },
   ];

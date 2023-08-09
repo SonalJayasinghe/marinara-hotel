@@ -15,14 +15,10 @@ import {
   Square,
   Center,
 } from "@chakra-ui/react";
-import {
-  HamburgerIcon,
-  CloseIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-import { NAV_ITEMS} from "../data/NavItem";
+import { NAV_ITEMS } from "../../data/NavItem";
 import { MobileNavItem } from "./mobNavBar";
-
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -40,13 +36,11 @@ export default function WithSubnavigation() {
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
-
         <Flex
           flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
           display={{ base: "flex", md: "none" }}
         >
-
           <IconButton
             onClick={onToggle}
             icon={
@@ -57,13 +51,12 @@ export default function WithSubnavigation() {
           />
         </Flex>
 
-
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-            <Image src="src/assets/Logo.png" w="100px"/>
+          <Image src="src/assets/Logo.png" w="100px" />
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <Square>
-            <DesktopNav />
+              <DesktopNav />
             </Square>
           </Flex>
         </Flex>
@@ -74,7 +67,6 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
-          
           <Button
             as={"a"}
             fontSize={"sm"}
@@ -98,9 +90,6 @@ export default function WithSubnavigation() {
   );
 }
 
-
-
-
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");
@@ -108,7 +97,6 @@ const DesktopNav = () => {
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
-
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
@@ -121,7 +109,7 @@ const DesktopNav = () => {
                 fontWeight={500}
                 color={linkColor}
                 _hover={{
-                  textDecoration:"none",
+                  textDecoration: "none",
                   color: linkHoverColor,
                 }}
               >
@@ -131,26 +119,27 @@ const DesktopNav = () => {
           </Popover>
         </Box>
       ))}
-
     </Stack>
   );
 };
 
-
-
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("white", "gray.800")}
+      //bg={useColorModeValue("white", "gray.800")}
+      backdropFilter="auto"
+      backdropBlur="4px"
       p={4}
       display={{ md: "none" }}
+      position={"absolute"}
+      width="100%"
+      height="100%"
     >
       {NAV_ITEMS.map((navItem) => (
         <Center>
-        <MobileNavItem key={navItem.label} {...navItem} />
+          <MobileNavItem key={navItem.label} {...navItem} />
         </Center>
       ))}
     </Stack>
   );
 };
-
