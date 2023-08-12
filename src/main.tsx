@@ -9,12 +9,44 @@ import {
 } from "react-router-dom";
 import Home from '../src/Pages/Home.tsx';
 import PageNotFound from './Pages/PageNotFound.tsx'
+import RoomTour from './Pages/RoomTour.tsx'
+import Dining from './Pages/Dining.tsx'
+import Offers from './Pages/Offers.tsx'
+import About from './Pages/About.tsx'
+import Contact from './Pages/Contact.tsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>
   },
+
+  {
+    path: "/roomtour",
+    element: <RoomTour/>
+  },
+
+  {
+    path: "/dining",
+    element: <Dining/>
+  },
+
+  {
+    path: "/offers",
+    element: <Offers/>
+  },
+
+  {
+    path: "/about",
+    element: <About/>
+  },
+
+  {
+    path: "/contact",
+    element: <Contact/>
+  },
+
+
   {
     path: "*",
     element: <PageNotFound/>
