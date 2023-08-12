@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Heading, Text, Button } from '@chakra-ui/react'
+import { Box, Heading, Text} from '@chakra-ui/react'
 
 export default function NotFound404() {
   return (
@@ -17,7 +17,7 @@ export default function NotFound404() {
         Room Not Found
       </Text>
       <Text color={'gray.500'} mb={6}>
-        The page you&apos;re looking for does not seem to exist
+        The page you&apos;re looking for does not seem to exist. Please go back to the home.
       </Text>
     </Box>
   )

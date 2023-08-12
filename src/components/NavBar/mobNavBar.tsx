@@ -7,6 +7,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { NavItem } from "../../data/NavItem";
+import { Link } from "react-router-dom";
 
 export const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure();
@@ -15,8 +16,6 @@ export const MobileNavItem = ({ label, children, href }: NavItem) => {
     <Stack spacing={4} onClick={children && onToggle}>
       <Box
         py={2}
-        as="a"
-        href={href ?? "#"}
         justifyContent="space-between"
         alignItems="center"
         _hover={{
@@ -27,7 +26,9 @@ export const MobileNavItem = ({ label, children, href }: NavItem) => {
           fontWeight={600}
           color={useColorModeValue("gray.600", "gray.200")}
         >
-          {label}
+           <Link id={label} to={href} onClick={() => console.log('Hi')
+                }> {label} </Link> 
+
         </Text>
       </Box>
 

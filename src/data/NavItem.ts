@@ -2,32 +2,32 @@ export interface NavItem {
     label: string;
     subLabel?: string;
     children?: Array<NavItem>;
-    href?: string;
+    href: string;
   }
   
   export const NAV_ITEMS: Array<NavItem> = [
     {
       label: "Home",
-      href: "#",
+      href: "/",
     },
     {
       label: "Room Tour",
-      href: "#",
+      href: "/roomtour",
     },
     {
         label: "Dining",
-        href: "#",
+        href: "/dining",
       },
       {
         label: "Offers",
-        href: "#",
+        href: "/offers",
       },
       {
         label: "About Us",
-        href: "#"
+        href: "/about"
       },
       {
         label: "Contact Us",
-        href: "#",
+        href: "/contact",
       },
   ];

@@ -19,6 +19,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 import { NAV_ITEMS } from "../../data/NavItem";
 import { MobileNavItem } from "./mobNavBar";
+import { Link } from "react-router-dom";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -96,14 +97,12 @@ const DesktopNav = () => {
 
   return (
     <Stack direction={"row"} spacing={4}>
-      {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
+      {NAV_ITEMS.map((navItem, index) => (
+        <Box key={index}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Box
-                as="a"
                 p={2}
-                href={navItem.href ?? "#"}
                 fontSize={"sm"}
                 outline={0}
                 fontWeight={500}
@@ -113,7 +112,9 @@ const DesktopNav = () => {
                   color: linkHoverColor,
                 }}
               >
-                {navItem.label}
+                <Link id={navItem.label} to={navItem.href} onClick={() => console.log('Hi')
+                }> {navItem.label} </Link> 
+                
               </Box>
             </PopoverTrigger>
           </Popover>
@@ -128,16 +129,16 @@ const MobileNav = () => {
     <Stack
       //bg={useColorModeValue("white", "gray.800")}
       backdropFilter="auto"
-      backdropBlur="4px"
+      backdropBlur="10px"
       p={4}
       display={{ md: "none" }}
       position={"absolute"}
       width="100%"
       height="100%"
     >
-      {NAV_ITEMS.map((navItem) => (
-        <Center>
-          <MobileNavItem key={navItem.label} {...navItem} />
+      {NAV_ITEMS.map((navItem,index) => (
+        <Center key = {index}>
+          <MobileNavItem {...navItem} />
         </Center>
       ))}
     </Stack>
