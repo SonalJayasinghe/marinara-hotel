@@ -14,8 +14,9 @@ import {
   Image,
   Square,
   Center,
+  useColorMode,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 import { NAV_ITEMS } from "../../data/NavItem";
 import { MobileNavItem } from "./mobNavBar";
@@ -23,11 +24,12 @@ import { Link } from "react-router-dom";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box >
+    <Box>
       <Flex
-        bg={useColorModeValue("white.100", "gray.800")}
+        bg={useColorModeValue("white", "gray.900")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         py={{ base: 2 }}
@@ -37,6 +39,7 @@ export default function WithSubnavigation() {
         borderBottomRadius={25}
         borderColor={useColorModeValue("white", "gray.900")}
         align={"center"}
+        shadow={"sm"}
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -69,6 +72,10 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
+          <Button onClick={toggleColorMode} borderRadius={100}>
+            {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+          </Button>
+
           <Button
             as={"a"}
             fontSize={"sm"}
@@ -100,8 +107,7 @@ const DesktopNav = () => {
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem, index) => (
-        <Box key={index}
-        >
+        <Box key={index}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Box
@@ -115,10 +121,14 @@ const DesktopNav = () => {
                   color: linkHoverColor,
                 }}
               >
-
-                <Link id={navItem.label} to={navItem.href} onClick={() => console.log('Hi')
-                }> {navItem.label} </Link> 
-                
+                <Link
+                  id={navItem.label}
+                  to={navItem.href}
+                  onClick={() => console.log("Hi")}
+                >
+                  {" "}
+                  {navItem.label}{" "}
+                </Link>
               </Box>
             </PopoverTrigger>
           </Popover>
@@ -135,15 +145,15 @@ const MobileNav = () => {
       backdropFilter="auto"
       zIndex={1}
       backdropBlur="10px"
-      backgroundColor={"whiteAlpha.700"}
+      backgroundColor={useColorModeValue("whiteAlpha.700", "blackAlpha.600")}
       p={4}
       display={{ md: "none" }}
       position={"absolute"}
       width="100%"
       height="100vh"
     >
-      {NAV_ITEMS.map((navItem,index) => (
-        <Center key = {index}>
+      {NAV_ITEMS.map((navItem, index) => (
+        <Center key={index}>
           <MobileNavItem {...navItem} />
         </Center>
       ))}
