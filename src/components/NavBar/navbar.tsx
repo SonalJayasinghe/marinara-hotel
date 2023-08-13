@@ -27,14 +27,15 @@ export default function WithSubnavigation() {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
+        bg={useColorModeValue("white.100", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
         borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
+        borderBottomRadius={25}
+        borderColor={useColorModeValue("white", "gray.900")}
         align={"center"}
       >
         <Flex
@@ -75,6 +76,7 @@ export default function WithSubnavigation() {
             color={"white"}
             bg={"teal.600"}
             href={"#"}
+            borderRadius={100}
             _hover={{
               bg: "teal.500",
             }}
@@ -129,12 +131,14 @@ const MobileNav = () => {
     <Stack
       //bg={useColorModeValue("white", "gray.800")}
       backdropFilter="auto"
+      zIndex={1}
       backdropBlur="10px"
+      backgroundColor={"whiteAlpha.700"}
       p={4}
       display={{ md: "none" }}
       position={"absolute"}
       width="100%"
-      height="100%"
+      height="100vh"
     >
       {NAV_ITEMS.map((navItem,index) => (
         <Center key = {index}>

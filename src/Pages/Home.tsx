@@ -1,6 +1,8 @@
-import { Grid, GridItem, Heading } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, calc } from "@chakra-ui/react";
 import NavBar from "../components/NavBar/navbar";
 import { useEffect } from "react";
+import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 
 function Home() {
   useEffect(() => {
@@ -14,7 +16,12 @@ function Home() {
           <NavBar></NavBar>
         </GridItem>
         <GridItem>
-          <Heading> Welcome to Fucking Home</Heading>
+            <Hero/>
+        </GridItem>
+        <GridItem>
+          <Box position={"absolute"} top={"100vh"} padding={0} width="100%">
+            <Footer/>
+            </Box>
         </GridItem>
       </Grid>
     </>

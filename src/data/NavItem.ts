@@ -26,8 +26,4 @@ export interface NavItem {
         label: "About Us",
         href: "/about"
       },
-      {
-        label: "Contact Us",
-        href: "/contact",
-      },
   ];

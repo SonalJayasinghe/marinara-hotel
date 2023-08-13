@@ -16,13 +16,16 @@ export const MobileNavItem = ({ label, children, href }: NavItem) => {
     <Stack spacing={4} onClick={children && onToggle}>
       <Box
         py={2}
+        
         justifyContent="space-between"
         alignItems="center"
         _hover={{
           textDecoration: "none",
         }}
       >
+
         <Text
+       
           fontWeight={600}
           color={useColorModeValue("gray.600", "gray.200")}
         >

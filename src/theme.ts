@@ -6,5 +6,11 @@ const config: ThemeConfig = {
 
 const theme = extendTheme({
     config,
+
+    font:{
+        heading: `'Quicksand' , sans-serif`,
+        body: `'Quicksand' , sans-serif`
+    }
+    
 });
 export default theme;
