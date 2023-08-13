@@ -7,7 +7,8 @@ import {
 } from "@chakra-ui/react";
 import NavBar from "../components/NavBar/navbar";
 import { useEffect } from "react";
-import Hero from "../components/Hero";
+import Hero from "../components/HeroComponent/Hero";
+import HeroCard from "../components/HeroComponent/HeroCard";
 
 function Home() {
   useEffect(() => {
@@ -25,6 +26,9 @@ function Home() {
 
         <Box w="100%" marginTop={8}>
             <Hero/>
+            <Center marginY={-70}>
+            <HeroCard/>
+            </Center>
         </Box>
 
         <Box w="100%" marginY={20} bgColor={"red"} >
