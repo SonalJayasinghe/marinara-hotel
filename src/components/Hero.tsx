@@ -1,6 +1,8 @@
 import {
   Box,
   Center,
+  Container,
+  Divider,
   Flex,
   HStack,
   Heading,
@@ -33,16 +35,17 @@ export default function Hero() {
           zIndex={-1}
         >
           <Center>
-            <Box position={"absolute"} top="50%">
-              <Heading
-                as="h2"
-                size={"4xl"}
-                color={"whitesmoke"}
-                textShadow={"1px 1px 30px #121212"}
-              >
-                Welcome!
-              </Heading>
-              <Center>
+            <Box  position="fixed" bottom={{lg:"55%", base:"68%"}} w="100%">
+                <Center>
+                    <VStack>
+                <Heading
+                  as="h2"
+                  size={"4xl"}
+                  color={"whitesmoke"}
+                  textShadow={"1px 1px 30px #121212"}
+                >
+                  Welcome!
+                </Heading>
                 <Heading
                   marginTop={3}
                   as="h4"
@@ -52,32 +55,34 @@ export default function Hero() {
                 >
                   The most luxury hotel in Negombo
                 </Heading>
-              </Center>
+                </VStack>
+                </Center>
             </Box>
 
             <Flex
               backgroundColor={"white"}
-              minH={{ base: "32", md: "32", lg: "40" }}
-              maxH={{ base: "32", md: "32", lg: "40" }}
+              minH={32}
+              maxH={32}
               minW="80%"
               maxW="80%"
-              position={"absolute"}
-              bottom={{ lg: "-70px", base: "-65px" }}
+             position={"relative"}
+             bottom={{ lg: "-430px", base: "-250px" }}
               borderRadius={90}
               overflowY={"scroll"}
               scrollBehavior={"auto"}
               shadow={"lg"}
               justify={"center"}
-              padding={10}
-              
+              padding={30}
+              paddingStart={20}
             >
-              <HStack gap={6}>
-                <Square padding={1} >
+              <HStack gap={4}>
+                <Square padding={1}>
                   <VStack color={"teal"}>
                     <MdOutlineAttachMoney size={30} />
                     <Text as={"b"}> $25.00/ Night </Text>
                   </VStack>
                 </Square>
+                <Divider orientation='vertical' />
 
                 <Square padding={1}>
                   <VStack color={"teal"}>
@@ -85,6 +90,7 @@ export default function Hero() {
                     <Text as={"b"}> Room Service </Text>
                   </VStack>
                 </Square>
+                <Divider orientation='vertical' />
 
                 <Square padding={1}>
                   <VStack color={"teal"}>
@@ -92,6 +98,7 @@ export default function Hero() {
                     <Text as={"b"}> Air Condition </Text>
                   </VStack>
                 </Square>
+                <Divider orientation='vertical' />
 
                 <Square padding={1}>
                   <VStack color={"teal"}>
@@ -99,6 +106,7 @@ export default function Hero() {
                     <Text as={"b"}> Free Parking </Text>
                   </VStack>
                 </Square>
+                <Divider orientation='vertical' />
 
                 <Square padding={1}>
                   <VStack color={"teal"}>
@@ -106,10 +114,9 @@ export default function Hero() {
                     <Text as={"b"}> Free WiFi </Text>
                   </VStack>
                 </Square>
-
-
               </HStack>
             </Flex>
+            
           </Center>
         </Box>
       </Center>

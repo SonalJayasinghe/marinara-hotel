@@ -1,8 +1,13 @@
-import { Box, Flex, Grid, GridItem, calc } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Flex,
+  Heading,
+  VStack,
+} from "@chakra-ui/react";
 import NavBar from "../components/NavBar/navbar";
 import { useEffect } from "react";
 import Hero from "../components/Hero";
-import Footer from "../components/Footer";
 
 function Home() {
   useEffect(() => {
@@ -11,19 +16,26 @@ function Home() {
 
   return (
     <>
-      <Grid>
-        <GridItem>
-          <NavBar></NavBar>
-        </GridItem>
-        <GridItem>
+      <Flex>
+        <VStack width="100%">
+          
+        <Box w="100%">
+          <NavBar/>
+        </Box>
+
+        <Box w="100%" marginTop={8}>
             <Hero/>
-        </GridItem>
-        <GridItem>
-          <Box position={"absolute"} top={"100vh"} padding={0} width="100%">
-            <Footer/>
-            </Box>
-        </GridItem>
-      </Grid>
+        </Box>
+
+        <Box w="100%" marginY={20} bgColor={"red"} >
+          <Center>
+          <Heading> T</Heading>
+          </Center>
+        </Box>
+
+
+        </VStack>
+      </Flex>
     </>
   );
 }
