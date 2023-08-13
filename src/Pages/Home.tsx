@@ -31,7 +31,7 @@ function Home() {
             </Center>
         </Box>
 
-        <Box w="100%" marginY={20} bgColor={"red"} >
+        <Box w="100%" marginTop={40} >
           <Center>
           <Heading> T</Heading>
           </Center>
