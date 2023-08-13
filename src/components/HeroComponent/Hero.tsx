@@ -14,7 +14,7 @@ export default function Hero() {
           borderRadius={40}
           shadow={"lg"}
           backgroundImage={"src/assets/heroImg.jpg"}
-          zIndex={-1}
+          zIndex={-3}
         >
           <Center marginY={200}>
             <VStack>

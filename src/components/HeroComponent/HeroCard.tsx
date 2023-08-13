@@ -13,6 +13,7 @@ function HeroCard() {
               maxH={32}
               minW="80%"
               maxW="80%"
+              zIndex={-2}
               borderRadius={90}
               overflowY={"scroll"}
               scrollBehavior={"auto"}
@@ -40,7 +41,7 @@ function HeroCard() {
                     
                   </VStack>
                 </Square>
-                <Divider orientation='vertical' />
+                <Divider orientation='vertical' zIndex={-1}/>
 
                 <Square padding={1}>
                   <VStack>
@@ -48,7 +49,7 @@ function HeroCard() {
                     <Text as={"b"}> Room Service </Text>
                   </VStack>
                 </Square>
-                <Divider orientation='vertical' />
+                <Divider orientation='vertical' zIndex={-1}/>
 
                 <Square padding={1}>
                   <VStack>
@@ -56,7 +57,7 @@ function HeroCard() {
                     <Text as={"b"}> Air Condition </Text>
                   </VStack>
                 </Square>
-                <Divider orientation='vertical' />
+                <Divider orientation='vertical' zIndex={-1}/>
 
                 <Square padding={1}>
                   <VStack>

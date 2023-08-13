@@ -57,7 +57,7 @@ export default function WithSubnavigation() {
         </Flex>
 
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Image src="src/assets/Logo.png" w="100px" />
+          <Image src={colorMode === "light" ? "src/assets/Logo.png": "src/assets/Logo_dark.png"} w="100px" />
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <Square>
