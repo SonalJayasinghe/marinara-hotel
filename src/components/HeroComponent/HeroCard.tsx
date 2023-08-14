@@ -13,21 +13,20 @@ function HeroCard() {
               maxH={32}
               minW="80%"
               maxW="80%"
-              zIndex={-2}
               borderRadius={90}
               overflowY={"scroll"}
-              scrollBehavior={"auto"}
               shadow={"lg"}
               justify={"center"}
               padding={30}
               paddingStart={{base:"120", lg:"20"}}
-              paddingEnd={{base:"12", lg:"20"}}
+              paddingEnd={{base:"10", lg:"20"}}
               sx={
                 { 
                '::-webkit-scrollbar':{
                       display:'none'
                   }
                }
+               
              }
             >
               <HStack gap={4} color={useColorModeValue('teal', 'gray.100')}>
@@ -49,7 +48,7 @@ function HeroCard() {
                     <Text as={"b"}> Room Service </Text>
                   </VStack>
                 </Square>
-                <Divider orientation='vertical' zIndex={-1}/>
+                <Divider orientation='vertical'/>
 
                 <Square padding={1}>
                   <VStack>
@@ -57,7 +56,7 @@ function HeroCard() {
                     <Text as={"b"}> Air Condition </Text>
                   </VStack>
                 </Square>
-                <Divider orientation='vertical' zIndex={-1}/>
+                <Divider orientation='vertical'/>
 
                 <Square padding={1}>
                   <VStack>
@@ -65,7 +64,7 @@ function HeroCard() {
                     <Text as={"b"}> Free Parking </Text>
                   </VStack>
                 </Square>
-                <Divider orientation='vertical' />
+                <Divider orientation='vertical'/>
 
                 <Square padding={1}>
                   <VStack>

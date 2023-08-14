@@ -40,6 +40,7 @@ export default function WithSubnavigation() {
         borderColor={useColorModeValue("white", "gray.900")}
         align={"center"}
         shadow={"sm"}
+        
       >
         <Flex
           flex={{ base: 1, md: "auto" }}

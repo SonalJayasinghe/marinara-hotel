@@ -11,6 +11,7 @@ import Hero from "../components/HeroComponent/Hero";
 import HeroCard from "../components/HeroComponent/HeroCard";
 import Footer from "../components/Footer";
 import PeopleSay from "../components/PeopleSay";
+import ShowCaseGrid from "../components/ShowcaseComponent/ShowCaseGrid";
 
 function Home() {
   useEffect(() => {
@@ -22,7 +23,7 @@ function Home() {
       <Flex>
         <VStack width="100%">
           
-        <Box w="100%" position={"fixed"}>
+        <Box w="100%" position={"fixed"} zIndex={2}>
           <NavBar/>
         </Box>
 
@@ -32,6 +33,20 @@ function Home() {
             <HeroCard/>
             </Center>
         </Box>
+
+        <Box w="100%" marginTop={40} >
+          <Center>
+          <Heading> Our Speciality </Heading>
+          </Center>
+        </Box>
+
+        <Box w="90%" marginTop={6}
+         >
+          <Center>
+          <ShowCaseGrid/>
+          </Center>
+        </Box>
+
 
         <Box w="100%" marginTop={40} >
           <Center>
