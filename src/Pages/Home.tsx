@@ -12,6 +12,7 @@ import HeroCard from "../components/HeroComponent/HeroCard";
 import Footer from "../components/Footer";
 import PeopleSay from "../components/PeopleSay";
 import ShowCaseGrid from "../components/ShowcaseComponent/ShowCaseGrid";
+import Accordation from "../components/Accordation";
 
 function Home() {
   useEffect(() => {
@@ -36,7 +37,7 @@ function Home() {
 
         <Box w="100%" marginTop={40} >
           <Center>
-          <Heading> Our Speciality </Heading>
+          <Heading> Our Speciality... </Heading>
           </Center>
         </Box>
 
@@ -48,7 +49,7 @@ function Home() {
         </Box>
 
 
-        <Box w="100%" marginTop={40} >
+        <Box w="100%" marginTop={'60px'} >
           <Center>
           <Heading> What People Say...</Heading>
           </Center>
@@ -60,6 +61,20 @@ function Home() {
           <PeopleSay/>
           </Center>
         </Box>
+
+        <Box w="100%" marginTop={'60px'} >
+          <Center>
+          <Heading> Would You Please Tell Me...</Heading>
+          </Center>
+        </Box>
+
+
+        <Box w="80%" marginTop={6}>
+          <Center>
+          <Accordation/>
+          </Center>
+        </Box>
+
 
         <Box w="100%" marginTop={"5vh"}>
           <Footer/>
