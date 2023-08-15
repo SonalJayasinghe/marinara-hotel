@@ -40,7 +40,7 @@ function HeroCard() {
                     
                   </VStack>
                 </Square>
-                <Divider orientation='vertical' zIndex={-1}/>
+                <Divider orientation='vertical'/>
 
                 <Square padding={1}>
                   <VStack>

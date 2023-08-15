@@ -11,7 +11,9 @@ function ShowCaseCard({cardUrl, info}: Props) {
     <>
     <Box bgColor={useColorModeValue('gray.50', 'teal.900')} 
     padding={0.1}
-    borderRadius={50}>
+    borderRadius={50}
+        _hover={{bgColor: useColorModeValue("gray.100", "teal.800")}}
+>
     <Box
     overflow={"hidden"}
     padding={3}
@@ -23,6 +25,7 @@ function ShowCaseCard({cardUrl, info}: Props) {
     backgroundSize={"cover"}
     backgroundImage={cardUrl}
     margin={3}
+
    >
         <Card 
         position={"absolute"}
