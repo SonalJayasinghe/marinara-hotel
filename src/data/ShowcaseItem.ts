@@ -19,9 +19,4 @@ export interface ShowCaseItem {
         info: "Beach",
       },
 
-      {
-        cardUrl: "src/assets/bath.jpg",
-        info: "Bath Area",
-      },
-
   ];
