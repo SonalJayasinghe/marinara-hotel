@@ -1,4 +1,4 @@
-export interface ShowCaseItem {
+export interface RoomTourItem {
     cardUrl: string,
     title: string,
 
@@ -18,7 +18,7 @@ export interface ShowCaseItem {
     },
   }
   
-  export const RoomTour_Items: Array<ShowCaseItem> = [
+  export const RoomTour_Items: Array<RoomTourItem> = [
     {
       cardUrl: "src/assets/JrSuite.jpg",
       title: "Jr. Suite",

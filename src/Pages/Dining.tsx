@@ -8,12 +8,12 @@ import {
 import NavBar from "../components/NavBar/navbar";
 import { useEffect } from "react";
 import Footer from "../components/Footer";
-import Accordation from "../components/Accordation";
-import RoomTourShowCaseGrid from "../components/RoomTourShowcase/RoomTourShowCaseGrid";
+import DiningShowcaseGrid from "../components/DiningShowcase/DiningShowcaseGrid";
+import AccordationDining from "../components/Accordation_DIning";
 
 function Dining() {
   useEffect(() => {
-    document.title = "Welcome to Castle Hotel";
+    document.title = "Dining";
   }, []);
 
   return (
@@ -34,7 +34,7 @@ function Dining() {
         <Box w="90%" marginTop={6}
          >
           <Center>
-          <RoomTourShowCaseGrid/>
+          <DiningShowcaseGrid/>
           </Center>
         </Box>
 
@@ -48,7 +48,7 @@ function Dining() {
 
         <Box w="80%" marginTop={6}>
           <Center>
-          <Accordation/>
+          <AccordationDining/>
           </Center>
         </Box>
 

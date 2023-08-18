@@ -9,9 +9,7 @@ import {
   TabPanels,
   TabPanel,
   Text,
-  ScaleFade,
 } from "@chakra-ui/react";
-import { transform } from "framer-motion";
 
 interface Props {
   cardUrl: string,

@@ -16,7 +16,7 @@ import Accordation from "../components/Accordation";
 
 function Home() {
   useEffect(() => {
-    document.title = "Welcome to Castle Hotel";
+    document.title = "Welcome to Marinara Hotel";
   }, []);
 
   return (

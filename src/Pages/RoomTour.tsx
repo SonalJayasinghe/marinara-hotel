@@ -13,7 +13,7 @@ import RoomTourShowCaseGrid from "../components/RoomTourShowcase/RoomTourShowCas
 
 function RoomTour() {
   useEffect(() => {
-    document.title = "Welcome to Castle Hotel";
+    document.title = "Room Tour";
   }, []);
 
   return (
