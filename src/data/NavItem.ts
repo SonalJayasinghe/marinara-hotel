@@ -23,7 +23,7 @@ export interface NavItem {
         href: "/offers",
       },
       {
-        label: "About Us",
-        href: "/about"
+        label: "Contact",
+        href: "/contact"
       },
   ];

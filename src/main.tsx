@@ -12,7 +12,6 @@ import PageNotFound from './Pages/PageNotFound.tsx'
 import RoomTour from './Pages/RoomTour.tsx'
 import Dining from './Pages/Dining.tsx'
 import Offers from './Pages/Offers.tsx'
-import About from './Pages/About.tsx'
 import Contact from './Pages/Contact.tsx'
 
 const router = createBrowserRouter([
@@ -34,11 +33,6 @@ const router = createBrowserRouter([
   {
     path: "/offers",
     element: <Offers/>
-  },
-
-  {
-    path: "/about",
-    element: <About/>
   },
 
   {
