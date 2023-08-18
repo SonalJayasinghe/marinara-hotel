@@ -1,7 +1,5 @@
 import {
   Box,
-  HStack,
-  StackItem,
   useColorModeValue,
   Text,
   Center,
@@ -16,14 +14,14 @@ function CallNowCard() {
           <Box
             borderRadius={45}
             bg={useColorModeValue("gray.50", "teal.900")}
-            w={"250px"}
+            w={{base: "100%", lg:"250px"}}
             h={"140px"}
             padding={5}
             overflow={"hidden"}
             verticalAlign={"center"}
             _hover={{ bgColor: useColorModeValue("gray.100", "teal.800") }}
           >
-            <Text align={"justify"}>
+            <Text align={"center"}>
               <Center>
                 <b>Address: </b> <br />
               </Center>
@@ -37,7 +35,7 @@ function CallNowCard() {
           <Box
             borderRadius={45}
             bg={useColorModeValue("gray.50", "teal.900")}
-            w={"250px"}
+            w={{base: "100%", lg:"250px"}}
             h={"140px"}
             padding={5}
             overflow={"hidden"}

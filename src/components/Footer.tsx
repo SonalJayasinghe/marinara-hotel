@@ -58,7 +58,7 @@ export default function Footer() {
         justify={{ base: 'center', md: 'center' }}
         align={{ base: 'center', md: 'center' }}>
             <Center>
-        <Text>© 2023 Developed by Sonal Jayasinghe. All rights reserved</Text>
+        <Text align={"center"}>© 2023 Developed by Sonal Jayasinghe. All rights reserved</Text>
         </Center>
       </Container>
     </Box>

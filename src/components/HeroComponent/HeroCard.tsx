@@ -18,7 +18,7 @@ function HeroCard() {
               shadow={"lg"}
               justify={"center"}
               padding={30}
-              paddingStart={{base:"120", lg:"20"}}
+              paddingStart={{base:"240", lg:"20"}}
               paddingEnd={{base:"10", lg:"20"}}
               sx={
                 { 

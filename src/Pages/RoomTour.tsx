@@ -18,16 +18,16 @@ function RoomTour() {
 
   return (
     <>
-      <Flex>
+      <Flex minH={"100vh"}>
         <VStack width="100%">
           
         <Box w="100%" position={"fixed"} zIndex={2}>
           <NavBar/>
         </Box>
 
-        <Box w="100%" marginTop={'95px'} >
+        <Box w="100%" marginTop={'95px'} padding={2} >
           <Center>
-          <Heading> Are you ready for a Room Tour ? </Heading>
+          <Heading textAlign={"center"}> Are you ready for a Room Tour ? </Heading>
           </Center>
         </Box>
 
@@ -39,21 +39,21 @@ function RoomTour() {
         </Box>
 
 
-        <Box w="100%" marginTop={'60px'} >
+        <Box w="100%" marginTop={'60px'} padding={2}>
           <Center>
-          <Heading> Would You Please Tell Me...</Heading>
+          <Heading textAlign={"center"}> Would You Please Tell Me...</Heading>
           </Center>
         </Box>
 
 
-        <Box w="80%" marginTop={6}>
+        <Box w={{base: "98%" , lg:"80%"}} marginTop={6} marginBottom={3}>
           <Center>
           <Accordation/>
           </Center>
         </Box>
 
 
-        <Box w="100%" marginTop={"5vh"}>
+        <Box w="100%" marginTop={"auto"}>
           <Footer/>
         </Box>
 

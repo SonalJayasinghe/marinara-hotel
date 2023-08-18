@@ -27,7 +27,7 @@ export default function WithSubnavigation() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box>
+    <Box justifyContent={"space-between"}>
       <Flex
         bg={useColorModeValue("white", "gray.900")}
         color={useColorModeValue("gray.600", "white")}
@@ -45,6 +45,7 @@ export default function WithSubnavigation() {
         <Flex
           flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
+          mr={{base:-150}}
           display={{ base: "flex", md: "none" }}
         >
           <IconButton
@@ -157,6 +158,7 @@ const MobileNav = () => {
         <Center key={index}>
           <MobileNavItem {...navItem} />
         </Center>
+        
       ))}
     </Stack>
   );

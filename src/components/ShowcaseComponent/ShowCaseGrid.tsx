@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Grid, GridItem } from "@chakra-ui/react"
+import { Box, Center, Flex } from "@chakra-ui/react"
 import { ShowCase_Item } from "../../data/ShowcaseItem"
 import ShowCaseCard from "./ShowCaseCard"
 
@@ -12,7 +12,7 @@ function ShowCaseGrid() {
     justifyContent={"center"}
     >
         {ShowCase_Item.map((item, index) => (
-            <Box><ShowCaseCard key={index} cardUrl={item.cardUrl} info={item.info}/></Box>
+            <Box key={index} ><ShowCaseCard cardUrl={item.cardUrl} info={item.info}/></Box>
         ))}
     </Flex>
     </Center>

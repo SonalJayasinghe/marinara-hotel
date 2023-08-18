@@ -18,16 +18,16 @@ function Contact() {
 
   return (
     <>
-      <Flex>
+      <Flex minH={"100vh"}>
         <VStack width="100%">
           
         <Box w="100%" position={"fixed"} zIndex={2}>
           <NavBar/>
         </Box>
 
-        <Box w="100%" marginTop={'95px'} >
+        <Box w="100%" marginTop={'95px'} padding={3}>
           <Center>
-          <Heading> Didn't you found the route? </Heading>
+          <Heading textAlign={"center"}> Didn't you found the route? </Heading>
           </Center>
         </Box>
 
@@ -39,6 +39,7 @@ function Contact() {
           </Center>
         </Box>
         <Box w="90%" marginTop={6}
+        marginBottom={10}
          >
           <Center>
             <CallNowCard/>
@@ -46,7 +47,7 @@ function Contact() {
         </Box>
 
 
-        <Box w="100%" marginTop={"5vh"}>
+        <Box w="100%" marginTop={"auto"}>
           <Footer/>
         </Box>
 

@@ -1,4 +1,4 @@
-import { Box,Card, useColorModeValue } from "@chakra-ui/react"
+import { Box,Card, useColorModeValue, Image } from "@chakra-ui/react"
 
 interface Props{
   cardUrl: string,
@@ -9,35 +9,33 @@ function ShowCaseCard({cardUrl, info}: Props) {
 
   return (
     <>
-    <Box bgColor={useColorModeValue('gray.50', 'teal.900')} 
-    padding={0.1}
+    <Box bgColor={useColorModeValue('gray.50', 'teal.900')} padding={1} 
     borderRadius={50}
         _hover={{bgColor: useColorModeValue("gray.100", "teal.800")}}
 >
-    <Box
+    <Image
     overflow={"hidden"}
-    padding={3}
+    padding={2}
     width={"350px"} 
     height={"450px"} 
-    borderRadius={40}
+    borderRadius={50}
     shadow={"sm"}
     backgroundPosition={"center"}
     backgroundSize={"cover"}
-    backgroundImage={cardUrl}
-    margin={3}
+    src={cardUrl}/>
 
-   >
         <Card 
         position={"absolute"}
         borderRadius={30}
-        marginY={3}
+        marginY={-425}
+        marginX={4}
         padding={3} 
         width={"max-content"} 
         bgColor={useColorModeValue("whiteAlpha.600", "blackAlpha.600")}
         color={useColorModeValue("black", 'whitesmoke')}>
           {info}
         </Card>
-    </Box>
+
     </Box>
     </>
   )

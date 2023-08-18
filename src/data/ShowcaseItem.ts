@@ -5,7 +5,7 @@ export interface ShowCaseItem {
   
   export const ShowCase_Item: Array<ShowCaseItem> = [
     {
-      cardUrl: "src/assets/kingbed.jpg",
+      cardUrl: "src/assets/bedroom.jpg",
       info: "Bedroom",
     },
 

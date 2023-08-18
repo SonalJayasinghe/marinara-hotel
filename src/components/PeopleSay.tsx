@@ -12,7 +12,8 @@ export default function PeopleSay() {
       spacing={{ base: 8, md: 10 }}
       align={'center'}
       direction={'column'}
-      zIndex={-1}>
+      zIndex={-1}
+      >
       <Text fontSize={{ base: 'xl', md: '2xl' }} textAlign={'center'} maxW={'3xl'}>
       I had a wonderful stay at this beachside hotel. The location was perfect, with stunning ocean views right from my room. The sound of the waves was incredibly soothing. The staff was friendly and the beach access was convenient. I thoroughly enjoyed my time here and would definitely come back.
         product concept so quickly.

@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <>
-      <Flex>
+      <Flex minH={"100vh"}>
         <VStack width="100%">
           
         <Box w="100%" position={"fixed"} zIndex={2}>
@@ -41,7 +41,7 @@ function Home() {
           </Center>
         </Box>
 
-        <Box w="90%" marginTop={6}
+        <Box w="90%" margin={6} 
          >
           <Center>
           <ShowCaseGrid/>
@@ -56,27 +56,27 @@ function Home() {
         </Box>
 
 
-        <Box w="90%" marginTop={6}>
+        <Box w="90%" marginTop={6} >
           <Center>
           <PeopleSay/>
           </Center>
         </Box>
 
-        <Box w="100%" marginTop={'60px'} >
+        <Box w="100%" marginTop={'60px'} padding={2} >
           <Center>
-          <Heading> Would You Please Tell Me...</Heading>
+          <Heading textAlign={"center"}> Would You Please Tell Me...</Heading>
           </Center>
         </Box>
 
 
-        <Box w="80%" marginTop={6}>
+        <Box marginTop={6} w={{base: "98%" , lg:"80%"}} marginBottom={3}>
           <Center>
           <Accordation/>
           </Center>
         </Box>
 
 
-        <Box w="100%" marginTop={"5vh"}>
+        <Box w="100%" marginTop={"auto"}>
           <Footer/>
         </Box>
 

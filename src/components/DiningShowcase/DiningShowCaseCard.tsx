@@ -31,6 +31,8 @@ function DiningShowCaseCard({ cardUrl, cuisine, meat, halal, name }: Props) {
               src={cardUrl}
               width={"full"}
               borderRadius={40}
+              filter="auto"
+              brightness="80%"
             />
             <Card
               position={"absolute"}
