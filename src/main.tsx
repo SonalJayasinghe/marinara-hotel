@@ -1,5 +1,5 @@
 import React from "react";
-import { background, ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import "./index.css";
 import theme from "./theme.ts";
 import ReactDOM from "react-dom/client";
