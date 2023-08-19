@@ -15,7 +15,6 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
-
 import { NAV_ITEMS } from "../../data/NavItem";
 import { MobileNavItem } from "./mobNavBar";
 import { Link } from "react-router-dom";
@@ -57,8 +56,7 @@ export default function WithSubnavigation() {
         </Flex>
 
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Image src={colorMode === "light" ? "src/assets/Logo.png": "src/assets/Logo_dark.png"} w="100px" />
-
+          <Image src= {colorMode === "light" ? " ./assets/Logo.png": "./assets/Logo_dark.png"} w="100px" />
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <Square>
               <DesktopNav />

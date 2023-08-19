@@ -5,17 +5,17 @@ export interface ShowCaseItem {
   
   export const ShowCase_Item: Array<ShowCaseItem> = [
     {
-      cardUrl: "src/assets/bedroom.jpg",
+      cardUrl: "./assets/bedroom.jpg",
       info: "Bedroom",
     },
 
     {
-        cardUrl: "src/assets/seafood.jpg",
+        cardUrl: "./assets/seafood.jpg",
         info: "Seafood",
       },
     
       {
-        cardUrl: "src/assets/beach.jpg",
+        cardUrl: "./assets/beach.jpg",
         info: "Beach",
       },
 

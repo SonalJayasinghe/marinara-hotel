@@ -1,4 +1,5 @@
 import { Avatar, Box, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+//import IMG from '../assets/GhostZen_Sonal.jpg';
 
 export default function PeopleSay() {
   return (
@@ -24,7 +25,7 @@ export default function PeopleSay() {
         definitely come back. product concept so quickly.
       </Text>
       <Box textAlign={"center"}>
-        <Avatar src={"src/assets/GhostZen_Sonal.jpg"} mb={2} />
+        <Avatar src={'./assets/GhostZen_Sonal.jpg'} mb={2} />
 
         <Text fontWeight={600}>Sonal Danindu Jayasinghe</Text>
         <Text fontSize={"sm"} color={useColorModeValue("gray.400", "gray.400")}>

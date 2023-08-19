@@ -13,7 +13,7 @@ export default function Hero() {
           backgroundSize={"cover"}
           borderRadius={40}
           shadow={"lg"}
-          backgroundImage={"src/assets/heroImg.jpg"}
+          backgroundImage={"./assets/heroImg.jpg"}
           zIndex={-3}
         >
           <Center marginY={200}>
