@@ -12,7 +12,6 @@ import HeroCard from "../components/HeroComponent/HeroCard";
 import Footer from "../components/Footer";
 import PeopleSay from "../components/PeopleSay";
 import ShowCaseGrid from "../components/ShowcaseComponent/ShowCaseGrid";
-import Accordation from "../components/Accordation";
 
 function Home() {
   useEffect(() => {
@@ -59,19 +58,6 @@ function Home() {
         <Box w="90%" marginTop={6} >
           <Center>
           <PeopleSay/>
-          </Center>
-        </Box>
-
-        <Box w="100%" marginTop={'60px'} padding={2} >
-          <Center>
-          <Heading textAlign={"center"}> Would You Please Tell Me...</Heading>
-          </Center>
-        </Box>
-
-
-        <Box marginTop={6} w={{base: "98%" , lg:"80%"}} marginBottom={3}>
-          <Center>
-          <Accordation/>
           </Center>
         </Box>
 
