@@ -80,13 +80,15 @@ export default function WithSubnavigation() {
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
           </Button>
 
+          
           <Button
             as={"a"}
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}
             bg={"teal.600"}
-            href={"#"}
+            href={"https://www.booking.com/"}
+            target="_blank"
             borderRadius={100}
             _hover={{
               bg: "teal.500",
@@ -164,3 +166,4 @@ const MobileNav = () => {
     </Stack>
   );
 };
+

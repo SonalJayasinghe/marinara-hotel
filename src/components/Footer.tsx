@@ -10,6 +10,7 @@ import {
   VisuallyHidden,
   useColorModeValue,
   Image,
+  Center,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
@@ -63,9 +64,9 @@ export default function LargeWithNewsletter() {
       borderTopRadius={30}
       marginTop={8}
     >
-      <Container as={Stack} maxW={"6xl"} py={10}>
+      <Container as={Stack} maxW={"6xl"} py={5}>
         <SimpleGrid
-          templateColumns={{ sm: "1fr 1fr 1fr", md: "2fr 1fr 1fr" }}
+          templateColumns={{ sm: "1fr 1fr 1fr", md: "1fr 1fr 1fr" }}
           spacing={8}
         >
           <Stack spacing={3} justify={"center"}>

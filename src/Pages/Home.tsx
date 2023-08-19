@@ -55,7 +55,7 @@ function Home() {
         </Box>
 
 
-        <Box w="90%" marginTop={6} marginBottom={6}>
+        <Box w="90%" marginTop={6}>
           <Center>
           <PeopleSay/>
           </Center>

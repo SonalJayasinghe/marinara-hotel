@@ -26,7 +26,7 @@ function TermsAndCondition() {
 
           <Box w="100%" marginTop={"95px"}>
             <Center>
-              <Heading textAlign={"center"} padding={3}>
+              <Heading textAlign={"center"} padding={3} marginBottom={6}>
                 {" "}
                 Terms and Conditions{" "}
               </Heading>

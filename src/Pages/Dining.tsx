@@ -46,7 +46,7 @@ function Dining() {
         </Box>
 
 
-        <Box w={{base: "98%" , lg:"80%"}} marginTop={6} marginBottom={3}> 
+        <Box w={{base: "98%" , lg:"80%"}} marginTop={6}> 
           <Center>
           <AccordationDining/>
           </Center>
