@@ -46,7 +46,6 @@ function Contact() {
           </Center>
         </Box>
 
-
         <Box w="100%" marginTop={"auto"}>
           <Footer/>
         </Box>

@@ -55,14 +55,14 @@ function Home() {
         </Box>
 
 
-        <Box w="90%" marginTop={6} >
+        <Box w="90%" marginTop={6} marginBottom={6}>
           <Center>
           <PeopleSay/>
           </Center>
         </Box>
 
 
-        <Box w="100%" marginTop={"auto"}>
+        <Box w="100%" marginTop={"auto"} >
           <Footer/>
         </Box>
 
