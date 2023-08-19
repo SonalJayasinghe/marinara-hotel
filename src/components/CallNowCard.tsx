@@ -49,7 +49,7 @@ function CallNowCard() {
               <Center>
               +94766618710<br/>
               +97747472738 <br/>
-              +8383448484<br/>
+              +83834484844<br/>
               </Center>
             </Text>
           </Box>

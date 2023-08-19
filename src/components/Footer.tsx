@@ -66,7 +66,7 @@ export default function LargeWithNewsletter() {
     >
       <Container as={Stack} maxW={"6xl"} py={5}>
         <SimpleGrid
-          templateColumns={{ sm: "1fr 1fr 1fr", md: "1fr 1fr 1fr" }}
+          templateColumns={{ sm: "1fr 1fr 1fr 1fr", md: "1fr 1fr 1fr 1fr" }}
           spacing={8}
         >
           <Stack spacing={3} justify={"center"}>
@@ -101,6 +101,21 @@ export default function LargeWithNewsletter() {
             </Box>
             <Box as="a" href={"#/privacy"}>
               Privacy Policy
+            </Box>
+          </Stack>
+
+          <Stack align={"flex-start"}>
+            <ListHeader>Contact Us</ListHeader>
+            <Box>
+              Hotel Marinara, No.54, <br />
+              Main Road, Negombo,
+              <br />
+              Sri Lanka
+            </Box>
+            <Box>
+              +947XXXXXXX
+              <br />
+              <br />
             </Box>
           </Stack>
         </SimpleGrid>

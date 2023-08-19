@@ -25,10 +25,6 @@ export const AccordationDining_Item: Array<AccordationItems_Dining> = [
         answer: " Yes, there are is a bar near the resturent.",
     },
 
-    {
-        question: "Can I smoke in the resturent?",
-        answer: "Smoking allowed only in the SMOKING AREA",
-    },
 
     {
         question: "I didn't find my question here",
