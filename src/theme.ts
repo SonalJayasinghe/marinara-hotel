@@ -10,7 +10,7 @@ const theme = extendTheme({
     font:{
         heading: `'Quicksand' , sans-serif`,
         body: `'Quicksand' , sans-serif`
-    }
+    },
     
 });
 export default theme;

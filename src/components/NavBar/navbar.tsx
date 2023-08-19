@@ -37,12 +37,11 @@ export default function WithSubnavigation() {
         borderColor={useColorModeValue("white", "gray.900")}
         align={"center"}
         shadow={"sm"}
-        
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
-          mr={{base:-150}}
+          mr={{ base: -150 }}
           display={{ base: "flex", md: "none" }}
         >
           <IconButton
@@ -56,7 +55,14 @@ export default function WithSubnavigation() {
         </Flex>
 
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Image src= {colorMode === "light" ? " ./assets/Logo.png": "./assets/Logo_dark.png"} w="100px" />
+          <Image
+            src={
+              colorMode === "light"
+                ? "./assets/logo.png"
+                : "./assets/logo_dark.png"
+            }
+            w="100px"
+          />
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <Square>
               <DesktopNav />
@@ -154,7 +160,6 @@ const MobileNav = () => {
         <Center key={index}>
           <MobileNavItem {...navItem} />
         </Center>
-        
       ))}
     </Stack>
   );
