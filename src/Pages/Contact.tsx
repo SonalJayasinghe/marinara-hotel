@@ -13,7 +13,7 @@ import CallNowCard from "../components/CallNowCard";
 
 function Contact() {
   useEffect(() => {
-    document.title = "About us";
+    document.title = "Contact us";
   }, []);
 
   return (
@@ -38,6 +38,14 @@ function Contact() {
             <Map/>
           </Center>
         </Box>
+
+        <Box w="100%" marginTop={10} padding={3}>
+          <Center>
+          <Heading textAlign={"center"}> Need more help? </Heading>
+          </Center>
+        </Box>
+
+
         <Box w="90%" marginTop={6}
         marginBottom={10}
          >

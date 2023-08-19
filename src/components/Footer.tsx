@@ -108,23 +108,29 @@ export default function LargeWithNewsletter() {
           <Stack align={"flex-start"}>
             <ListHeader>Contact Us</ListHeader>
             <Box>
-              Hotel Marinara, No.54, <br />
+              Marinara Hotel,
+              <br />
               Main Road, Negombo,
+              <br />
+              Western Province,
               <br />
               Sri Lanka
             </Box>
-            <Box>
-              +947XXXXXXX
-            </Box>
+            <Box>+947XXXXXXX</Box>
           </Stack>
         </SimpleGrid>
-        <Divider orientation="horizontal"/>
+        <Divider orientation="horizontal" />
 
         <Center margin={1} color={"gray.400"}>
-        <a href="https://www.linkedin.com/in/sonaljayasinghe/" target="_blank"> Developed by Sonal Jayasinghe</a>
-      </Center>
+          <a
+            href="https://www.linkedin.com/in/sonaljayasinghe/"
+            target="_blank"
+          >
+            {" "}
+            Developed by Sonal Jayasinghe
+          </a>
+        </Center>
       </Container>
-      
     </Box>
   );
 }

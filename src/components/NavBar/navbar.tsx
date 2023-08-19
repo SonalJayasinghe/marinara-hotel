@@ -91,7 +91,7 @@ export default function WithSubnavigation() {
             target="_blank"
             borderRadius={100}
             _hover={{
-              bg: "teal.500",
+              bg: "teal.800",
             }}
           >
             Reservation
