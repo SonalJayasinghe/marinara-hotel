@@ -18,8 +18,8 @@ function HeroCard() {
               shadow={"lg"}
               justify={"center"}
               padding={30}
-              paddingStart={{base:"240", lg:"20"}}
-              paddingEnd={{base:"10", lg:"20"}}
+              paddingStart={{base:"200", lg:"20"}}
+              paddingEnd={{base:"30", lg:"20"}}
               sx={
                 { 
                '::-webkit-scrollbar':{
@@ -29,7 +29,7 @@ function HeroCard() {
                
              }
             >
-              <HStack gap={4} color={useColorModeValue('teal', 'gray.100')}>
+              <HStack gap={4} color={useColorModeValue('teal', 'gray.100')} >
                 <Square padding={1} >
                   <VStack >
                   
