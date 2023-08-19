@@ -11,6 +11,7 @@ import {
   useColorModeValue,
   Image,
   Center,
+  Divider,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
@@ -114,12 +115,16 @@ export default function LargeWithNewsletter() {
             </Box>
             <Box>
               +947XXXXXXX
-              <br />
-              <br />
             </Box>
           </Stack>
         </SimpleGrid>
+        <Divider orientation="horizontal"/>
+
+        <Center margin={1} color={"gray.400"}>
+        <a href="https://www.linkedin.com/in/sonaljayasinghe/" target="_blank"> Developed by Sonal Jayasinghe</a>
+      </Center>
       </Container>
+      
     </Box>
   );
 }
