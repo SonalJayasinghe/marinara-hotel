@@ -6,7 +6,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import NavBar from "../components/NavBar/navbar";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import Hero from "../components/HeroComponent/Hero";
 import HeroCard from "../components/HeroComponent/HeroCard";
 import Footer from "../components/Footer";
@@ -17,6 +17,11 @@ function Home() {
   useEffect(() => {
     document.title = "Welcome to Marinara Hotel";
   }, []);
+
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
 
   return (
     <>

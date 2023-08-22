@@ -1,12 +1,17 @@
 import { Box, Center, Flex, Heading, VStack } from "@chakra-ui/react";
 import NavBar from "../components/NavBar/navbar";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import Footer from "../components/Footer";
 
 function Offers() {
   useEffect(() => {
     document.title = "Offers";
   }, []);
+
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
 
   return (
     <>

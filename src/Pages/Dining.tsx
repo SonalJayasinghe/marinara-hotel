@@ -6,7 +6,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import NavBar from "../components/NavBar/navbar";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import Footer from "../components/Footer";
 import DiningShowcaseGrid from "../components/DiningShowcase/DiningShowcaseGrid";
 import AccordationDining from "../components/Accordation_DIning";
@@ -15,6 +15,10 @@ function Dining() {
   useEffect(() => {
     document.title = "Dining";
   }, []);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
 
   return (
     <>

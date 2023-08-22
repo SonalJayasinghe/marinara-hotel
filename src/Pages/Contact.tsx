@@ -6,7 +6,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import NavBar from "../components/NavBar/navbar";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import Footer from "../components/Footer";
 import Map from "../components/Map";
 import CallNowCard from "../components/CallNowCard";
@@ -15,6 +15,10 @@ function Contact() {
   useEffect(() => {
     document.title = "Contact us";
   }, []);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
 
   return (
     <>

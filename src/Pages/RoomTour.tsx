@@ -6,7 +6,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import NavBar from "../components/NavBar/navbar";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import Footer from "../components/Footer";
 import Accordation from "../components/Accordation";
 import RoomTourShowCaseGrid from "../components/RoomTourShowcase/RoomTourShowCaseGrid";
@@ -15,6 +15,11 @@ function RoomTour() {
   useEffect(() => {
     document.title = "Room Tour";
   }, []);
+
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
 
   return (
     <>

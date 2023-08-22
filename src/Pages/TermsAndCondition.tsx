@@ -8,13 +8,18 @@ import {
   Text,
 } from "@chakra-ui/react";
 import NavBar from "../components/NavBar/navbar";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import Footer from "../components/Footer";
 
 function TermsAndCondition() {
   useEffect(() => {
     document.title = "Terms and Conditions";
   }, []);
+
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
 
   return (
     <>

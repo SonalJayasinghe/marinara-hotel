@@ -90,7 +90,7 @@ export default function LargeWithNewsletter() {
           <Stack align={"flex-start"}>
             <ListHeader>Site Map</ListHeader>
             {NAV_ITEMS.map((item, index) => (
-              <Box key={index} as="a" href={"#" + item.href}>
+              <Box key={index} as="a" href={"#" + item.href} scrollBehavior={"smooth"}>
                 {item.label}
               </Box>
             ))}
