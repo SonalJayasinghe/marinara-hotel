@@ -19,7 +19,7 @@ function HeroCard() {
               justify={"center"}
               padding={30}
               paddingStart={{base:"150", lg:"20"}}
-              paddingEnd={{base:"30", lg:"20"}}
+              paddingEnd={{base:"10", lg:"20"}}
               sx={
                 { 
                '::-webkit-scrollbar':{
