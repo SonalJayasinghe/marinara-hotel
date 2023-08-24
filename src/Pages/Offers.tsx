@@ -1,7 +1,8 @@
-import { Box, Center, Flex, Heading, VStack } from "@chakra-ui/react";
+import { Box, Center, Flex, VStack } from "@chakra-ui/react";
 import NavBar from "../components/NavBar/navbar";
 import { useEffect, useLayoutEffect } from "react";
 import Footer from "../components/Footer";
+import OffersCard from "../components/OffersCard";
 
 function Offers() {
   useEffect(() => {
@@ -23,10 +24,7 @@ function Offers() {
 
           <Box w="100%" marginTop={"95px"}>
             <Center>
-              <Heading textAlign={"center"} padding={3}>
-                {" "}
-                Sorry! No offers are available right now.{" "}
-              </Heading>
+             <OffersCard/>
             </Center>
           </Box>
 
