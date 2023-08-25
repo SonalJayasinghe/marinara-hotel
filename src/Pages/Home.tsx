@@ -14,6 +14,9 @@ import PeopleSay from "../components/PeopleSay";
 import ShowCaseGrid from "../components/ShowcaseComponent/ShowCaseGrid";
 
 function Home() {
+
+  const pgNo = 0;
+
   useEffect(() => {
     document.title = "Welcome to Marinara Hotel";
   }, []);
@@ -29,7 +32,7 @@ function Home() {
         <VStack width="100%">
           
         <Box w="100%" position={"fixed"} zIndex={2}>
-          <NavBar/>
+          <NavBar pgNo={pgNo}/>
         </Box>
 
         <Box w="100%" marginTop={"95px"}>

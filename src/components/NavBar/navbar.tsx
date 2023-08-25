@@ -13,13 +13,17 @@ import {
   Square,
   Center,
   useColorMode,
+  Divider,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { NAV_ITEMS } from "../../data/NavItem";
 import { MobileNavItem } from "./mobNavBar";
 import { Link } from "react-router-dom";
 
-export default function WithSubnavigation() {
+interface Props{
+  pgNo: number
+}
+export default function WithSubnavigation({pgNo}:Props) {
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
 
@@ -65,7 +69,7 @@ export default function WithSubnavigation() {
           />
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <Square>
-              <DesktopNav />
+              <DesktopNav pgNo={pgNo}/>
             </Square>
           </Flex>
         </Flex>
@@ -106,7 +110,7 @@ export default function WithSubnavigation() {
   );
 }
 
-const DesktopNav = () => {
+const DesktopNav = ({pgNo}:Props) => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");
 
@@ -133,7 +137,9 @@ const DesktopNav = () => {
                   onClick={() => console.log("Hi")}
                 >
                   {" "}
-                  {navItem.label}{" "}
+                 {navItem.label}
+                  {pgNo === index? <Divider borderColor={"teal"} borderWidth={'1px'} orientation="horizontal"/> : null}
+
                 </Link>
               </Box>
             </PopoverTrigger>

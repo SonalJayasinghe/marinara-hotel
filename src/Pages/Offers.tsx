@@ -5,6 +5,8 @@ import Footer from "../components/Footer";
 import OffersCard from "../components/OffersCard";
 
 function Offers() {
+  const pgNo = 3;
+
   useEffect(() => {
     document.title = "Offers";
   }, []);
@@ -19,7 +21,7 @@ function Offers() {
       <Flex minH={"100vh"}>
         <VStack width="100%">
           <Box w="100%" position={"fixed"} zIndex={2}>
-            <NavBar />
+            <NavBar pgNo={pgNo}/>
           </Box>
 
           <Box w="100%" marginTop={"95px"}>

@@ -12,6 +12,8 @@ import DiningShowcaseGrid from "../components/DiningShowcase/DiningShowcaseGrid"
 import AccordationDining from "../components/Accordation_DIning";
 
 function Dining() {
+  const pgNo = 2;
+
   useEffect(() => {
     document.title = "Dining";
   }, []);
@@ -26,7 +28,7 @@ function Dining() {
         <VStack width="100%">
           
         <Box w="100%" position={"fixed"} zIndex={2}>
-          <NavBar/>
+          <NavBar pgNo={pgNo}/>
         </Box>
 
         <Box w="100%" marginTop={'95px'} >

@@ -12,6 +12,8 @@ import Map from "../components/Map";
 import CallNowCard from "../components/CallNowCard";
 
 function Contact() {
+  const pgNo = 4;
+
   useEffect(() => {
     document.title = "Contact us";
   }, []);
@@ -26,7 +28,7 @@ function Contact() {
         <VStack width="100%">
           
         <Box w="100%" position={"fixed"} zIndex={2}>
-          <NavBar/>
+          <NavBar pgNo={pgNo}/>
         </Box>
 
         <Box w="100%" marginTop={'95px'} padding={3}>
